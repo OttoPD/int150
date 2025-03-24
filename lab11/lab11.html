@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 14 FlexLayout</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        #container {
+            width: 300px ;
+            height: 600px ;
+            display: flex;
+            flex-direction: column;
+            flex: 4;
+        }
+        .box {
+            border: 1px solid black ;
+        }
+        #box1 {
+            background-color: purple;
+            flex: 1;
+        }
+        #box2 {
+            background-color: white;
+            flex: 3;
+        }
+        #box3 {
+            background-color: red;
+            flex: 3;
+        }
+        #box4 {
+            background-color: blue;
+            flex: 1;
+        }
+        #box5 {
+            background-color: green;
+            flex: 2;
+        }
+        #box6 {
+            background-color: cyan;
+            flex: .5;
+
+        }
+        #box7 {
+            background-color: yellow;
+            flex: .5;
+        }
+        #g1{
+            display: flex; 
+            flex-direction: row;
+            flex: 4;
+        }
+        #g2{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        #g3{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+        #g4{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="g1">
+        <div id="g2">
+            <div id="box1" class="box">1</div> 
+            <div id="box2" class="box">2</div> 
+        </div>
+            <div id="box3" class="box">3</div> 
+        </div>
+        <div id="g3">
+            <div id="box4" class="box">4</div> 
+            <div id="box5" class="box">5</div> 
+            <div id="g4">
+                <div id="box6" class="box">6</div> 
+                <div id="box7" class="box">7</div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
